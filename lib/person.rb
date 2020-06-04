@@ -43,11 +43,10 @@ class Person
       return "all about the benjamins"
     end
 
-    def take_bath
-      increase = (hygiene=(points))
-      if increase <= 6
+    def take_bath(increase)
+      if @hygiene <= 6
         @hygiene += 4
-      else increase > 6
+      else @hygiene > 6
         @hygiene = 10
       end
       return "♪ Rub-a-dub just relaxing in the tub ♫"
