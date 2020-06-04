@@ -13,6 +13,10 @@ class Person
   def happiness=(points)
     if points >= 0 && 10 >= points
       @happiness = points
+    elsif points > 10
+      @happiness = 10
+    elsif points < 0
+      @happiness = 0
     end
   end
 
