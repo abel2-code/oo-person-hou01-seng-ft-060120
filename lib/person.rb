@@ -43,13 +43,12 @@ class Person
     end
 
     def take_bath
-      if (@hygiene += 4) > 10
-        @hygiene = 10
-      else
-        @hygiene += 4
-      end
+      while @hygiene <= 6
+      @hygiene += 4
+      while @hygiene > 6
+        @hygiene == 10
       return "♪ Rub-a-dub just relaxing in the tub ♫"
-    end
+      
   end
 
 
