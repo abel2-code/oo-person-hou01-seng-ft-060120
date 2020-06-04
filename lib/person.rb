@@ -20,6 +20,10 @@ class Person
     end
   end
 
+  def happy?(points)
+    @happiness >= 7
+  end
+
   def hygiene=(points)
     if points >= 0 && 10 >= points
       @hygiene = points
