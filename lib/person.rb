@@ -1,13 +1,13 @@
 class Person
 
   attr_reader :name
-  attr_accessor :bank_account, :happiness, :hygiene_points
+  attr_accessor :bank_account, :happiness, :hygiene
 
-  def initialize(name, bank_account = 25, happiness = 8, hygiene_points = 8)
+  def initialize(name, bank_account = 25, happiness = 8, hygiene = 8)
     @name = name
     @bank_account = bank_account
     @happiness = 8
-    @hygiene_points = 8
+    @hygiene = 8
   end
 
   def happiness=(points)
@@ -20,13 +20,13 @@ class Person
     end
   end
 
-  def hygiene_points=(points)
+  def hygiene=(points)
     if points >= 0 && 10 >= points
-      @hygiene_points = points
+      @hygiene = points
     elsif points > 10
-      @hygiene_points = 10
+      @hygiene = 10
     elsif points < 0
-      @hygiene_points = 0
+      @hygiene = 0
     end
   end
 
