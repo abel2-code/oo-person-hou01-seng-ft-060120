@@ -48,7 +48,7 @@ class Person
       while @hygiene > 6
         @hygiene == 10
       return "♪ Rub-a-dub just relaxing in the tub ♫"
-      
+
   end
 
 
