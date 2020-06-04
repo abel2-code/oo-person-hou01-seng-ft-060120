@@ -43,7 +43,7 @@ class Person
     end
 
     def take_bath
-      if @hygiene += 4 > 10
+      if (@hygiene += 4) > 10
         @hygiene = 10
       else
         @hygiene += 4
