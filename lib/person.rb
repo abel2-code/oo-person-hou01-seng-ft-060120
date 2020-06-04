@@ -20,7 +20,7 @@ class Person
     end
   end
 
-  def happy?(points)
+  def happy?
     @happiness > 7
   end
 
