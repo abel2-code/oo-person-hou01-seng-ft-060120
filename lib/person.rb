@@ -20,6 +20,16 @@ class Person
     end
   end
 
+  def hygiene_points=(points)
+    if points >= 0 && 10 >= points
+      @hygiene_points = points
+    elsif points > 10
+      @hygiene_points = 10
+    elsif points < 0
+      @hygiene_points = 0
+    end
+  end
+
 
 
 
