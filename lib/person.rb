@@ -21,7 +21,7 @@ class Person
   end
 
   def happy?(points)
-    @happiness >= 7
+    @happiness > 7
   end
 
   def hygiene=(points)
