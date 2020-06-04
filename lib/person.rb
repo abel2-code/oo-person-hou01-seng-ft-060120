@@ -63,10 +63,8 @@ class Person
     end
 
     def call_friend(friend)
-      if @happiness <= 7
-        @happiness += 3
-      else
-        @happiness = 10
+      self.happiness += 3
+      friend.happiness += 3
       end
 
     end
