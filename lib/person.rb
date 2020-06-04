@@ -53,8 +53,16 @@ class Person
     end
 
     def work_out
-      @happiness += 2
-      @hygiene -= 3
+      if @happiness <= 8
+        @happiness += 2
+      else
+        @happiness = 10
+      end
+      if @hygiene >= 3
+        @hygiene -= 3
+      else
+        @hygiene = 0
+      end
       return "♪ another one bites the dust ♫"
     end
 
