@@ -32,6 +32,7 @@ class Person
     elsif points < 0
       @hygiene = 0
     end
+  end
 
     def clean?
       @hygiene > 7
@@ -50,6 +51,8 @@ class Person
       end
       return "♪ Rub-a-dub just relaxing in the tub ♫"
     end
+
+    
   end
 
 
