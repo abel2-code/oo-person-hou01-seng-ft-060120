@@ -72,7 +72,7 @@ class Person
       else
         @happiness = 10
       end
-      
+
     end
 
 
