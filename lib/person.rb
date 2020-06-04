@@ -47,6 +47,7 @@ class Person
         @hygiene = 10
       else
         @hygiene += 4
+      end
       return "♪ Rub-a-dub just relaxing in the tub ♫"
     end
   end
