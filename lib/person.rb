@@ -32,6 +32,10 @@ class Person
     elsif points < 0
       @hygiene = 0
     end
+
+    def clean?
+      @hygiene > 7
+    end
   end
 
 
