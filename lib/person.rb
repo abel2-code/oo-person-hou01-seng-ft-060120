@@ -60,7 +60,4 @@ class Person
 
 
 
-
-
-
 end
