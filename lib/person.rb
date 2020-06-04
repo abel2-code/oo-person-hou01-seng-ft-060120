@@ -53,7 +53,6 @@ class Person
     end
 
 
-  end
 
 
 
