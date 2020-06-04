@@ -43,7 +43,7 @@ class Person
       return "all about the benjamins"
     end
 
-    def take_bath(increase)
+    def take_bath
       increase = (hygiene=(points))
       if increase <= 6
         @hygiene += 4
