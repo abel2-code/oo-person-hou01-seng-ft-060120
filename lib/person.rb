@@ -43,7 +43,10 @@ class Person
     end
 
     def take_bath
-      @hygiene += 4
+      if @hygiene += 4 > 10
+        @hygiene = 10
+      else
+        @hygiene += 4
       return "♪ Rub-a-dub just relaxing in the tub ♫"
     end
   end
